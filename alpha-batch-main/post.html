@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./post.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0 2/css/font-awesome.min.css"
+    />
+    <title>Post</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <h3>Scribbler</h3>
+        <h4>Explore,imagine,create</h4>
+      </div>
+      <div class="action-container">
+        <button onclick="loginClickHandler()" class="login-buttons">Sign In</button>
+        <button onclick="signUpClickHandler()" class="login-buttons">
+          Sign Up
+        </button>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="card">
+        <div class="author-container">
+          <h5>Jimi</h5>
+        </div>
+        <div class="post-container">
+          <h3>Hello there,This is Post1!</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <i class="fa fa-trash trash-icon" aria-hidden="true"></i>
+          <i class="fa fa-ellipsis-h elipsis-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="author-container">
+          <h5>Jimi</h5>
+        </div>
+        <div class="post-container">
+          <h3>Hello there,This is Post2!</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <i class="fa fa-trash trash-icon" aria-hidden="true"></i>
+          <i class="fa fa-ellipsis-h elipsis-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="author-container">
+          <h5>Jimi</h5>
+        </div>
+        <div class="post-container">
+          <h3>Hello there,This is Post3!</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <i class="fa fa-trash trash-icon" aria-hidden="true"></i>
+          <i class="fa fa-ellipsis-h elipsis-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="author-container">
+          <h5>Jimi</h5>
+        </div>
+        <div class="post-container">
+          <h3>Hello there,This is Post4!</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <i class="fa fa-trash trash-icon" aria-hidden="true"></i>
+          <i class="fa fa-ellipsis-h elipsis-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="author-container">
+          <h5>Jimi</h5>
+        </div>
+        <div class="post-container">
+          <h3>Hello there,This is Post5!</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <i class="fa fa-trash trash-icon" aria-hidden="true"></i>
+          <i class="fa fa-ellipsis-h elipsis-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <div id="sign-up-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="heading">Get Started!</h3>
+          <span onclick="closeClickHandler()">
+            <i class="fa fa-times close" aria-hidden="true"></i>
+          </span>
+        </div>
+        <form>
+          <div class="input-container">
+            <label class="label"> Full name </label>
+            <input class="form-input" type="text" placeholder="Enter full name" type="text" />
+          </div>
+          <div class="input-container">
+            <label class="label"> Username </label>
+            <input class="form-input" type="text" placeholder="Enter username" type="text" />
+          </div>
+          <div class="input-container">
+            <label class="label"> Password </label>
+            <input class="form-input" type="password" placeholder="Enter password" type="text" />
+          </div>
+          <div class="input-container">
+            <label class="label"> Confirm Password </label>
+            <input class="form-input" type="password" placeholder="Enter confirm password" type="text" />
+          </div>
+        </form>
+        <div class="action-container">
+            <button class="primary"> Sign Up!</button>
+        </div>
+      </div>
+    </div>
+	
+	
+	 <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="heading">Welcome back</h3>
+          <span onclick="close1ClickHandler()">
+            <i class="fa fa-times close" aria-hidden="true"></i>
+          </span>
+        </div>
+        <form>
+        
+          <div class="input-container">
+            <label class="label"> Username </label>
+            <input class="form-input" type="text" placeholder="Enter username" type="text" />
+          </div>
+          <div class="input-container">
+            <label class="label"> Password </label>
+            <input class="form-input" type="password" placeholder="Enter password" type="text" />
+          </div>
+        
+        </form>
+        <div class="action-container">
+            <button class="primary"> Sign In</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const signUpClickHandler = () => {
+        const modal = document.getElementById("sign-up-modal");
+        modal.style.display = "flex";
+      };
+      const closeClickHandler = () =>{
+        const modal = document.getElementById("sign-up-modal");
+        modal.style.display = "";
+      }
+	   const loginClickHandler = () => {
+        const modal = document.getElementById("login-modal");
+        modal.style.display = "flex";
+      };
+	  const close1ClickHandler = () =>{
+        const modal = document.getElementById("login-modal");
+        modal.style.display = "";
+      }
+     
+    </script>
+  </body>
+</html>
