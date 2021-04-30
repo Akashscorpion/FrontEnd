@@ -1,0 +1,77 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-buttons{
+    background: #595d5e;
+    padding: 8px;
+    color:#f6f5f5;
+    min-width: 75px;
+
+}
+body{
+    background-color: #ffc478;
+}
+.main-container{
+    display: flex;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;   
+    margin-top: 16px;
+        border-radius: 16px; 
+        overflow: hidden;
+        max-width: 40%;
+        box-shadow: 5px 5px 18px 3px rgba(102,102,102,0.75);
+        -webkit-box-shadow: 5px 5px 18px 3px rgba(102,102,102,0.75);
+        -moz-box-shadow: 5px 5px 18px 3px rgba(102,102,102,0.75);
+}
+.author-container{
+    display: flex;
+    flex-basis: 20%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+.post-container{
+    position: relative;
+    padding: 16px;
+    flex-basis: 80%;
+    background-color: #d3e0ea;
+   
+}
+.post-container:hover{
+    background-color: lightgreen;
+}
+
+.elipsis-icon{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    cursor: pointer;
+}
+.trash-icon{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.trash-icon:hover{
+    color: red;
+}
+
+.elipsis-icon:hover{
+    color: rgb(224, 51, 51);
+
+}
+h5:hover{
+    cursor: pointer;
+}
+.pen:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
